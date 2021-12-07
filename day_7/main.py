@@ -1,8 +1,8 @@
-def fuel_cost(crabs,pos,step_cost):
+def fuel_cost(crabs,current_crab_pos,step_cost):
     fuel = 0
 
-    for i in range(len(crabs)):
-        steps = abs(crabs[i]-pos)
+    for other_crab_position in crabs:
+        steps = abs(other_crab_position-current_crab_pos)
         fuel += steps if step_cost == 1 else steps * (steps + 1 ) / 2
 
     return fuel
