@@ -1,5 +1,3 @@
-import numpy as np
-
 OPENING_CHARS = '([{<'
 CLOSING_CHARS = ')]}>'
 CHAR_ERROR_SCORES = {')':3,']':57,'}':1197,'>':25137}
